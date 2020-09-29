@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+  <title>References</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Lato", sans-serif;
+    }
+    body,
+    html {
+      height: 100%;
+      color: #777;
+      line-height: 1.8;
+    }
+
+    /* Create a Parallax Effect */
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3,
+    .bgimg-4,
+    .bgimg-5 {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* First image (Logo. Full height) */
+    .bgimg-1 {
+      background-image: url("images/parallax1.jpg");
+      min-height: 100%;
+    }
+
+    /* Second image (Portfolio) */
+    .bgimg-2 {
+      background-image: url("images/parallax2.jpg");
+      min-height: 400px;
+    }
+
+    /* Third image (Contact) */
+    .bgimg-3 {
+      background-image: url("images/parallax3.jpg");
+      min-height: 400px;
+    }
+
+    /* Fourth image (References) */
+    .bgimg-4 {
+      background-image: url("images/parallax4.jpg");
+      min-height: 400px;
+    }
+
+    /* Fourth image (References) */
+    .bgimg-5 {
+      background-image: url("images/parallax5.jpg");
+      min-height: 400px;
+    }
+
+    .w3-wide {
+      letter-spacing: 10px;
+    }
+    .w3-hover-opacity {
+      cursor: pointer;
+    }
+    .fa-search {
+      -webkit-text-stroke: 3px white; /* background color */
+      color: white;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1600px) {
+      .bgimg-1,
+      .bgimg-2,
+      .bgimg-3,
+      .bgimg-4,
+      .bgimg-5 {
+        background-attachment: scroll;
+        min-height: 400px;
+      }
+    }
+  </style>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar" id="myNavbar">
+        <a
+          class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+          href="javascript:void(0);"
+          onclick="toggleFunction()"
+          title="Toggle Navigation Menu"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="index.html" class="w3-bar-item w3-button"
+          ><i class="fas fa-home fa-lg"></i> HOME</a
+        >
+        <a
+          href="hardest-character.html"
+          class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fas fa-torii-gate fa-lg"></i> HARDEST CHARACTER</a
+        >
+        <a href="idol.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-user"></i> MY IDOL</a
+        >
+        <a href="birthday.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-envelope"></i> BIRTHDAY INVITATION</a
+        >
+        <a href="references.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fas fa-book"></i> REFERENCES</a
+        >
+        <a
+          href="#"
+          class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red"
+        >
+          <i class="fa fa-search"></i>
+        </a>
+      </div>
+
+      <!-- Navbar on small screens -->
+      <div
+        id="navDemo"
+        class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium"
+      >
+        <a
+          href="index.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >HOME</a
+        >
+        <a
+          href="hardest-character.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >THE HARDEST CHARACTER</a
+        >
+        <a
+          href="idol.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >MY IDOL</a
+        >
+        <a
+          href="birthday.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >BITHRDAY INVITATION</a
+        >
+        <a
+          href="references.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >REFERENCES</a
+        >
+        <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+      </div>
+    </div>
+
+    <!-- Fifth Parallax Image with References Text -->
+    <div class="bgimg-5 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-black-bold w3-red w3-wide"
+          >REFERENCES</span
+        >
+      </div>
+    </div>
+
+    <!-- Container (References Section) -->
+    <div class="w3-content w3-container w3-padding-64">
+      <div class="w3-content w3-container w3-padding-64">
+        <h3 class="w3-center w3-text-bold">Websites Resources</h3>
+        <p class="w3-justified">
+          <em
+            >ArchChinese.com. (n.d.). Chinese Radicals - 汉字偏旁部首 - Arch
+            Chinese. Arch Chinese. Retrieved September 27, 2020, from
+            <a href="https://www.archchinese.com/arch_chinese_radicals.html"
+              >https://www.archchinese.com/arch_chinese_radicals.html</a
+            >
+            Icons Tutorial. (n.d.). W3schools.Com. Retrieved September 25, 2020,
+            from
+            <a href="https://www.w3schools.com/icons/default.asp"
+              >https://www.w3schools.com/icons/default.asp</a
+            >
+            <br />
+            How Do People in China Learn to Write Chinese Characters? (2015,
+            January 17). The Chairman’s Bao. Retrieved From
+            <a
+              href="https://www.thechairmansbao.com/how-do-chinese-people-learn-to-write-chinese-characters/"
+              >https://www.thechairmansbao.com/how-do-chinese-people-learn-to-write-chinese-characters/</a
+            >
+            <br />
+            HTML Links Hyperlinks. (n.d.). W3schools.Com. Retrieved September
+            26, 2020, from
+            <a href="https://www.w3schools.com/html/html_links.asp"
+              >https://www.w3schools.com/html/html_links.asp</a
+            >
+            <br />
+            Key Features. (2019, March 18). Pleco. Retrieved September 25, 2020,
+            from
+            <a href="https://www.pleco.com/">https://www.pleco.com/</a>
+            <br />
+            Mandarin Chinese Character Dictionary - 票 Character Detail. (n.d.).
+            YellowBridge. Retrieved September 27, 2020, from
+            <a
+              href="https://www.yellowbridge.com/chinese/charsearch.php?zi=%E7%A5%A8"
+              >https://www.yellowbridge.com/chinese/charsearch.php?zi=%E7%A5%A8</a
+            >
+            <br />
+            W3.CSS Template. (n.d.). W3schools.Com. Retrieved September 25,
+            2020, from
+            <a
+              href="https://www.w3schools.com/w3css/tryw3css_templates_parallax.htm"
+              >https://www.w3schools.com/w3css/tryw3css_templates_parallax.htm</a
+            >
+            <br />
+            W3Schools Online Web Tutorials. (n.d.). W3schools.Com. Retrieved
+            September 24, 2020, from
+            <a href="https://www.w3schools.com/default.asp"
+              >https://www.w3schools.com/default.asp</a
+            >
+            <br />
+            Wang, J. (2016, May 18). The VERY Complicated Chinese Family Tree.
+            TutorMing Mandarin Learning Tips Blog. Retrieved September 26, 2020,
+            from
+            <a
+              href="http://blog.tutorming.com/mandarin-chinese-learning-tips/family-tree-relatives-in-chinese"
+              >http://blog.tutorming.com/mandarin-chinese-learning-tips/family-tree-relatives-in-chinese</a
+            >
+            <br />
+            票 - Chinese Character Detail Page. (n.d.). Written学Chinese.
+            Retrieved September 27, 2020, from
+            <a
+              href="https://dictionary.writtenchinese.com/worddetail/piao/7931/1/1"
+              >https://dictionary.writtenchinese.com/worddetail/piao/7931/1/1</a
+            >
+          </em>
+        </p>
+        <h3 class="w3-center w3-text-bold">Images & Video Resources</h3>
+        <p class="w3-justified">
+          <em
+            >Chinese Lanterns [JPG]. (n.d.). Deposit Photos. Retrieved From
+            <a
+              href="https://depositphotos.com/vector-images/chinese-wallpaper.html?qview=64455943"
+              >https://depositphotos.com/vector-images/chinese-wallpaper.html?qview=64455943</a
+            >
+            <br />
+            FOODISM360. (2019, December 11). Trio of Handmade Chinese
+            Plant-based Noodles [JPG]. Unsplash. Retrieved From
+            <a href="https://unsplash.com/photos/bGihzvcs8q0"
+              >https://unsplash.com/photos/bGihzvcs8q0</a
+            >
+            <br />
+            Lambert, W. (2018, May 26). Wooden Carved Statue Buddha [JPG].
+            Unsplash. Retrieved From
+            <a href="https://unsplash.com/photos/M6HReYQWrF0"
+              >https://unsplash.com/photos/M6HReYQWrF0</a
+            >
+            <br />
+            Lin, C. (2018, November 20). [White Printer Paper with kanji Script]
+            [JPG]. Unsplash. Retrieved From
+            <a href="https://unsplash.com/photos/ct58n7B6WbI"
+              >https://unsplash.com/photos/ct58n7B6WbI</a
+            >
+            <br />
+            MandarinKit. (2020, May 24). Chinese character 票 piào (ticket) with
+            Associated Words & Sentences. YouTube.
+            <a href="https://www.youtube.com/watch?v=t2GAGnfpbvs"
+              >https://www.youtube.com/watch?v=t2GAGnfpbvs</a
+            >
+            <br />
+            Tran, A. (2018, August 29). Chinese Lanterns [JPG]. Unsplash.
+            Retrieved From
+            <a href="https://unsplash.com/photos/JzRSWYCPrvI"
+              >https://unsplash.com/photos/JzRSWYCPrvI</a
+            >
+            <br />
+            trainchinese. (2018, March 7). How to write 票 (piào) – ticket –
+            stroke order, radical, examples and spoken audio. YouTube.
+            <a href="https://www.youtube.com/watch?v=33CDKAiVOqI"
+              >https://www.youtube.com/watch?v=33CDKAiVOqI</a
+            >
+            <br />
+            土, 五玄 Oriento. (2019, February 22). Tableware Set [JPG].
+            Unsplash. Guangzhou, China: Retrieved From
+            <a href="https://unsplash.com/photos/tJU1GxQLy4o"
+              >https://unsplash.com/photos/tJU1GxQLy4o</a
+            >
+            <br />
+            9comback. (n.d.). Illustration of Traditional Chinese Dragon, vector
+            illustration [JPG]. Shutterstock. Retrieved From
+            <a
+              href="https://www.shutterstock.com/image-vector/illustration-traditional-chinese-dragon-vector-577012465"
+              >https://www.shutterstock.com/image-vector/illustration-traditional-chinese-dragon-vector-577012465</a
+            >
+          </em>
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off"
+    >
+      <a href="references.html" class="w3-button w3-light-grey"
+        ><i class="fa fa-arrow-up w3-margin-right"></i>To The Top</a
+      >
+      <p>
+        Powered by
+        <a
+          href="https://www.w3schools.com/w3css/default.asp"
+          title="W3.CSS"
+          target="_blank"
+          class="w3-hover-text-green"
+          >w3.css</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+
+      // Change style of navbar on scroll
+      window.onscroll = function () {
+        myFunction();
+      };
+      function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          navbar.className =
+            "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        } else {
+          navbar.className = navbar.className.replace(
+            " w3-card w3-animate-top w3-white",
+            ""
+          );
+        }
+      }
+
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+    </script>
+  </body>
+</html>

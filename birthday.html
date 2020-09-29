@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+  <title>Birthday Invitation</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Lato", sans-serif;
+    }
+    body,
+    html {
+      height: 100%;
+      color: #777;
+      line-height: 1.8;
+    }
+
+    /* Create a Parallax Effect */
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3,
+    .bgimg-4,
+    .bgimg-5 {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* First image (Logo. Full height) */
+    .bgimg-1 {
+      background-image: url("images/parallax1.jpg");
+      min-height: 100%;
+    }
+
+    /* Second image (Portfolio) */
+    .bgimg-2 {
+      background-image: url("images/parallax2.jpg");
+      min-height: 400px;
+    }
+
+    /* Third image (Contact) */
+    .bgimg-3 {
+      background-image: url("images/parallax3.jpg");
+      min-height: 400px;
+    }
+
+    /* Fourth image (References) */
+    .bgimg-4 {
+      background-image: url("images/parallax4.jpg");
+      min-height: 400px;
+    }
+
+    /* Fourth image (References) */
+    .bgimg-5 {
+      background-image: url("images/parallax5.jpg");
+      min-height: 400px;
+    }
+
+    .w3-wide {
+      letter-spacing: 10px;
+    }
+    .w3-hover-opacity {
+      cursor: pointer;
+    }
+    .fa-search {
+      -webkit-text-stroke: 3px white; /* background color */
+      color: white;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1600px) {
+      .bgimg-1,
+      .bgimg-2,
+      .bgimg-3,
+      .bgimg-4,
+      .bgimg-5 {
+        background-attachment: scroll;
+        min-height: 400px;
+      }
+    }
+  </style>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar" id="myNavbar">
+        <a
+          class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+          href="javascript:void(0);"
+          onclick="toggleFunction()"
+          title="Toggle Navigation Menu"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="index.html" class="w3-bar-item w3-button"
+          ><i class="fas fa-home fa-lg"></i> HOME</a
+        >
+        <a
+          href="hardest-character.html"
+          class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fas fa-torii-gate fa-lg"></i> HARDEST CHARACTER</a
+        >
+        <a href="idol.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-user"></i> MY IDOL</a
+        >
+        <a href="birthday.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-envelope"></i> BIRTHDAY INVITATION</a
+        >
+        <a href="references.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fas fa-book"></i> REFERENCES</a
+        >
+        <a
+          href="#"
+          class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red"
+        >
+          <i class="fa fa-search"></i>
+        </a>
+      </div>
+
+      <!-- Navbar on small screens -->
+      <div
+        id="navDemo"
+        class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium"
+      >
+        <a
+          href="index.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >HOME</a
+        >
+        <a
+          href="hardest-character.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >THE HARDEST CHARACTER</a
+        >
+        <a
+          href="idol.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >MY IDOL</a
+        >
+        <a
+          href="birthday.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >BITHRDAY INVITATION</a
+        >
+        <a
+          href="references.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >REFERENCES</a
+        >
+        <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+      </div>
+    </div>
+
+    <!-- Fourth Parallax Image with Portfolio Text -->
+    <div class="bgimg-4 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-black-bold w3-red w3-wide"
+          >BIRTHDAY INVITATION</span
+        >
+      </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64">
+      <h3 class="w3-center">里有的生日</h3>
+      <p class="w3-center">
+        <em
+          >I create a close example for a birthday Invitation! 这个我 example
+          for 我们的朋友：李友
+        </em>
+      </p>
+      <br />
+      <img
+        src="/images/map.png"
+        class="w3-image w3-round"
+        style="width: 200%"
+      />
+
+      <div class="w3-row w3-padding-32 w3-section">
+        <div class="w3-large w3-margin-bottom w3-justified">
+          <i
+            class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
+          ></i>
+          我家<br />
+          <i
+            class="fas fa-comments fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
+          ></i>
+          Drinks，Food:中国菜和韩国菜，唱卡拉，跳舞 和 Much More<br />
+          <i
+            class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
+          ></i>
+          Email: 里有的生日@gmail.com<br />
+          <i
+            class="fas fa-gift fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
+          ></i>
+          Swing by to congratulate and celebrate an special time with 李友:<br />
+        </div>
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin: 0 -16px 8px -16px">
+            <div class="w3-half">
+              <input
+                class="w3-input w3-border"
+                type="text"
+                placeholder="名字"
+                required
+                name="名字"
+              />
+            </div>
+            <div class="w3-half">
+              <input
+                class="w3-input w3-border"
+                type="text"
+                placeholder="Email"
+                required
+                name="Email"
+              />
+            </div>
+          </div>
+          <input
+            class="w3-input w3-border"
+            type="text"
+            placeholder="手机"
+            required
+            name="手机"
+          />
+          <button class="w3-button w3-black w3-right w3-section" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off"
+    >
+      <a href="birthday.html" class="w3-button w3-light-grey"
+        ><i class="fa fa-arrow-up w3-margin-right"></i>To The Top</a
+      >
+      <p>
+        Powered by
+        <a
+          href="https://www.w3schools.com/w3css/default.asp"
+          title="W3.CSS"
+          target="_blank"
+          class="w3-hover-text-green"
+          >w3.css</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+
+      // Change style of navbar on scroll
+      window.onscroll = function () {
+        myFunction();
+      };
+      function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          navbar.className =
+            "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        } else {
+          navbar.className = navbar.className.replace(
+            " w3-card w3-animate-top w3-white",
+            ""
+          );
+        }
+      }
+
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+    </script>
+  </body>
+</html>
