@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+  <title>我的PORTFOLIO</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Lato", sans-serif;
+    }
+    body,
+    html {
+      height: 100%;
+      color: rgb(206, 68, 13);
+      line-height: 1.8;
+    }
+
+    /* Create a Parallax Effect */
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3,
+    .bgimg-4,
+    .bgimg-5,
+    .bgimg-6,
+    .bgimg-7,
+    .brimg-8 {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* First image (Logo. Full height) */
+    .bgimg-1 {
+      background-image: url("img/parallax1.jpg");
+      min-height: 100%;
+    }
+
+    /* Second image (Portfolio) */
+    .bgimg-2 {
+      background-image: url("img/parallax2.jpg");
+      min-height: 400px;
+    }
+
+    /* Third image (Contact) */
+    .bgimg-3 {
+      background-image: url("img/parallax3.jpg");
+      min-height: 400px;
+    }
+
+    /* Fourth image (Birthday) */
+    .bgimg-4 {
+      background-image: url("img/parallax4.jpg");
+      min-height: 400px;
+    }
+
+    /* Fourth image (References) */
+    .bgimg-5 {
+      background-image: url("img/parallax5.jpg");
+      min-height: 400px;
+    }
+
+    /* Fourth image (References) */
+    .bgimg-6 {
+      background-image: url("img/parallax6.jpg");
+      min-height: 400px;
+    }
+
+    /* Fourth image (References) */
+    .bgimg-7 {
+      background-image: url("img/parallax7.jpg");
+      min-height: 400px;
+    }
+
+    /* Fourth image (References) */
+    .bgimg-8 {
+      background-image: url("img/parallax8.jpg");
+      min-height: 400px;
+    }
+
+    .w3-wide {
+      letter-spacing: 10px;
+    }
+    .w3-hover-opacity {
+      cursor: pointer;
+    }
+    .fa-search {
+      -webkit-text-stroke: 3px white; /* background color */
+      color: white;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1600px) {
+      .bgimg-1,
+      .bgimg-2,
+      .bgimg-3,
+      .bgimg-4,
+      .bgimg-5,
+      .bgimg-6,
+      .bgimg-7,
+      .bgimg-8 {
+        background-attachment: scroll;
+        min-height: 400px;
+      }
+    }
+  </style>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar" id="myNavbar">
+        <a
+          class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+          href="javascript:void(0);"
+          onclick="toggleFunction()"
+          title="Toggle Navigation Menu"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="index.html" class="w3-bar-item w3-button"
+          ><i class="fas fa-home fa-lg"></i> HOME</a
+        >
+        <a
+          href="hardest-character.html"
+          class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fas fa-torii-gate fa-lg"></i> HARDEST CHARACTER</a
+        >
+        <a href="idol.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-user"></i> MY IDOL</a
+        >
+        <a href="birthday.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-envelope"></i> BIRTHDAY INVITATION</a
+        >
+        <a href="hobby-survey.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fas fa-clipboard"></i> Hobby Survey</a
+        >
+        <a href="中国人的好客.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fas fa-hand-holding-heart"></i> 中国人的好客</a
+        >
+        <a href="打电话约人.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fas fa-phone"></i> 打电话约人</a
+        >
+        <a href="references.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fas fa-book"></i> REFERENCES</a
+        >
+      </div>
+
+      <!-- Navbar on small screens -->
+      <div
+        id="navDemo"
+        class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium"
+      >
+        <a
+          href="index.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >HOME</a
+        >
+        <a
+          href="hardest-character.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >THE HARDEST CHARACTER</a
+        >
+        <a
+          href="idol.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >MY IDOL</a
+        >
+        <a
+          href="birthday.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >BITHRDAY INVITATION</a
+        >
+        <a
+          href="hobby-survey.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >Hobby Survey</a
+        >
+        <a
+          href="中国人的好客.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >中国人的好客</a
+        >
+        <a
+          href="打电话约人.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >打电话约人</a
+        >
+        <a
+          href="references.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >REFERENCES</a
+        >
+      </div>
+    </div>
+
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-8 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-red w3-text-black-bold w3-wide"
+          >打电话约人</span
+        >
+      </div>
+    </div>
+
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64">
+      <h3 class="w3-center">苏罗根和伊苏赫 Dialogue</h3>
+      <p class="w3-center">
+        <em
+          >这是苏我们的打电话. We wanted to make it as dynamic and real as possible! <br />
+          I hope you all enjoy our conversation! 谢谢大家！</em
+        >
+      </p>
+      <br />
+
+      <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+      <div class="w3-row-padding w3-center">
+        <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/812561/sp/81256100/embedIframeJs/uiconf_id/33140371/partner_id/812561?iframeembed=true&playerId=kaltura_player&entry_id=1_9ea1uq8s&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[hotspots.plugin]=1&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_fzfixxf1" 
+        width="400" height="285" allowfullscreen webkitallowfullscreen mozAllowFullScreen 
+        allow="autoplay *; fullscreen *; encrypted-media *" 
+        sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" 
+        frameborder="0" 
+        title="Kaltura Player"></iframe>
+        <br />
+        Here is the link for the dialogue Transcript:
+        <a href="打电话约人 - dialogue.docx"
+          >Audio Transcript - 打电话约人dialogue</a
+        >
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off"
+    >
+      <a href="idol.html" class="w3-button w3-light-grey"
+        ><i class="fa fa-arrow-up w3-margin-right"></i>To The Top</a
+      >
+      <p>
+        Powered by
+        <a
+          href="https://www.w3schools.com/w3css/default.asp"
+          title="W3.CSS"
+          target="_blank"
+          class="w3-hover-text-green"
+          >w3.css</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+
+      // Change style of navbar on scroll
+      window.onscroll = function () {
+        myFunction();
+      };
+      function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          navbar.className =
+            "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        } else {
+          navbar.className = navbar.className.replace(
+            " w3-card w3-animate-top w3-white",
+            ""
+          );
+        }
+      }
+
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+    </script>
+  </body>
+</html>

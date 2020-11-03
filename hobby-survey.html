@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+  <title>我的PORTFOLIO</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Lato", sans-serif;
+    }
+    body,
+    html {
+      height: 100%;
+      color: rgb(206, 68, 13);
+      line-height: 1.8;
+    }
+
+    /* Create a Parallax Effect */
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3,
+    .bgimg-4,
+    .bgimg-5,
+    .bgimg-6,
+    .bgimg-7,
+    .brimg-8 {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* First image (Logo. Full height) */
+    .bgimg-1 {
+      background-image: url("img/parallax1.jpg");
+      min-height: 100%;
+    }
+
+    /* Second image (Portfolio) */
+    .bgimg-2 {
+      background-image: url("img/parallax2.jpg");
+      min-height: 400px;
+    }
+
+    /* Third image (Contact) */
+    .bgimg-3 {
+      background-image: url("img/parallax3.jpg");
+      min-height: 400px;
+    }
+
+    /* Fourth image (Birthday) */
+    .bgimg-4 {
+      background-image: url("img/parallax4.jpg");
+      min-height: 400px;
+    }
+
+    /* Fourth image (References) */
+    .bgimg-5 {
+      background-image: url("img/parallax5.jpg");
+      min-height: 400px;
+    }
+
+    /* Fourth image (References) */
+    .bgimg-6 {
+      background-image: url("img/parallax6.jpg");
+      min-height: 400px;
+    }
+
+    /* Fourth image (References) */
+    .bgimg-7 {
+      background-image: url("img/parallax7.jpg");
+      min-height: 400px;
+    }
+
+    /* Fourth image (References) */
+    .bgimg-8 {
+      background-image: url("img/parallax8.jpg");
+      min-height: 400px;
+    }
+
+    .w3-wide {
+      letter-spacing: 10px;
+    }
+    .w3-hover-opacity {
+      cursor: pointer;
+    }
+    .fa-search {
+      -webkit-text-stroke: 3px white; /* background color */
+      color: white;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1600px) {
+      .bgimg-1,
+      .bgimg-2,
+      .bgimg-3,
+      .bgimg-4,
+      .bgimg-5,
+      .bgimg-6,
+      .bgimg-7,
+      .bgimg-8 {
+        background-attachment: scroll;
+        min-height: 400px;
+      }
+    }
+  </style>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar" id="myNavbar">
+        <a
+          class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+          href="javascript:void(0);"
+          onclick="toggleFunction()"
+          title="Toggle Navigation Menu"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="index.html" class="w3-bar-item w3-button"
+          ><i class="fas fa-home fa-lg"></i> HOME</a
+        >
+        <a
+          href="hardest-character.html"
+          class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fas fa-torii-gate fa-lg"></i> HARDEST CHARACTER</a
+        >
+        <a href="idol.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-user"></i> MY IDOL</a
+        >
+        <a href="birthday.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-envelope"></i> BIRTHDAY INVITATION</a
+        >
+        <a href="hobby-survey.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fas fa-clipboard"></i> Hobby Survey</a
+        >
+        <a href="中国人的好客.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fas fa-hand-holding-heart"></i> 中国人的好客</a
+        >
+        <a href="打电话约人.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fas fa-phone"></i> 打电话约人</a
+        >
+        <a href="references.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fas fa-book"></i> REFERENCES</a
+        >
+      </div>
+
+      <!-- Navbar on small screens -->
+      <div
+        id="navDemo"
+        class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium"
+      >
+        <a
+          href="index.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >HOME</a
+        >
+        <a
+          href="hardest-character.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >THE HARDEST CHARACTER</a
+        >
+        <a
+          href="idol.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >MY IDOL</a
+        >
+        <a
+          href="birthday.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >BITHRDAY INVITATION</a
+        >
+        <a
+          href="hobby-survey.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >Hobby Survey</a
+        >
+        <a
+          href="中国人的好客.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >中国人的好客</a
+        >
+        <a
+          href="打电话约人.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >打电话约人</a
+        >
+        <a
+          href="references.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >REFERENCES</a
+        >
+      </div>
+    </div>
+
+    <!-- Sixth Parallax Image with Hobby Survey Text -->
+    <div
+      class="bgimg-6 w3-display-container w3-opacity-min"
+    >
+      <div class="w3-display-middle">
+        <span
+          class="w3-center w3-padding-large w3-text-black-bold w3-red w3-xlarge w3-wide w3-animate-opacity"
+          >Hobby Survey/爱好调查</span
+        >
+      </div>
+    </div>
+
+    <!-- Container (Hardest Character Section) -->
+    <div class="w3-content w3-container w3-padding-64"><h2 class="w3-center w3-text-yellow">爱好调查问题</h2>
+      <p class="w3-center w3-text-black">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfMPoCHoF-wPjDNPQSFJTwo9U86VG2cC5WFf5WYpkv5q332xg/viewform?embedded=true" 
+        width="840" height="2340" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </p>
+      <h2 class="w3-center w3-text-yellow">爱好调查-Answers</h2>
+      <h3 class="w3-align-left w3-text-black-bold">第一问题</h3>
+      <div class="w3-light-grey">
+        <iframe width="600" height="371" seamless frameborder="0" scrolling="no" 
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR2ybVKL-16efjv6a4rQqx95q2Q7GYHDX2JJAD7t4aSN6n2tgwNhjpyNygMCIOlR2iyl-sR1q260rhk/pubchart?oid=721210493&amp;format=interactive">
+        </iframe>
+      </div>
+      <h3 class="w3-align-left w3-text-black-bold">第二问题</h3>
+      <div class="w3-light-grey">
+        <iframe width="600" height="371" seamless frameborder="0" scrolling="no" 
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR2ybVKL-16efjv6a4rQqx95q2Q7GYHDX2JJAD7t4aSN6n2tgwNhjpyNygMCIOlR2iyl-sR1q260rhk/pubchart?oid=2086777692&amp;format=interactive">
+        </iframe>
+      </div>
+      <h3 class="w3-align-left w3-text-black-bold">第三问题</h3>
+      <div class="w3-light-grey">
+        <iframe width="600" height="371" seamless frameborder="0" scrolling="no" 
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR2ybVKL-16efjv6a4rQqx95q2Q7GYHDX2JJAD7t4aSN6n2tgwNhjpyNygMCIOlR2iyl-sR1q260rhk/pubchart?oid=2083729784&amp;format=interactive">
+        </iframe>
+      </div>
+      <h3 class="w3-align-left w3-text-black-bold">第四问题</h3>
+      <div class="w3-light-grey">
+        <iframe width="600" height="371" seamless frameborder="0" scrolling="no" 
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR2ybVKL-16efjv6a4rQqx95q2Q7GYHDX2JJAD7t4aSN6n2tgwNhjpyNygMCIOlR2iyl-sR1q260rhk/pubchart?oid=1290699771&amp;format=interactive">
+        </iframe>
+      </div>
+
+      <h3 class="w3-align-left w3-text-black-bold">第五问题</h3>
+      <div class="w3-light-grey">
+        <iframe width="600" height="371" seamless frameborder="0" scrolling="no" 
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR2ybVKL-16efjv6a4rQqx95q2Q7GYHDX2JJAD7t4aSN6n2tgwNhjpyNygMCIOlR2iyl-sR1q260rhk/pubchart?oid=43058010&amp;format=interactive">
+        </iframe>
+      </div>
+      <h3 class="w3-align-left w3-text-black-bold">第六问题</h3>
+      <div class="w3-light-grey">
+        <iframe width="600" height="371" seamless frameborder="0" scrolling="no" 
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR2ybVKL-16efjv6a4rQqx95q2Q7GYHDX2JJAD7t4aSN6n2tgwNhjpyNygMCIOlR2iyl-sR1q260rhk/pubchart?oid=1762652724&amp;format=interactive">
+        </iframe>
+      </div>
+      <h3 class="w3-align-left w3-text-black-bold">第七问题</h3>
+      <div class="w3-light-grey">
+        <iframe width="600" height="371" seamless frameborder="0" scrolling="no" 
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR2ybVKL-16efjv6a4rQqx95q2Q7GYHDX2JJAD7t4aSN6n2tgwNhjpyNygMCIOlR2iyl-sR1q260rhk/pubchart?oid=1142201300&amp;format=interactive">
+        </iframe>
+      </div>
+      <h3 class="w3-align-left w3-text-black-bold">第八问题</h3>
+      <div class="w3-light-grey">
+        <iframe width="600" height="371" seamless frameborder="0" scrolling="no" 
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR2ybVKL-16efjv6a4rQqx95q2Q7GYHDX2JJAD7t4aSN6n2tgwNhjpyNygMCIOlR2iyl-sR1q260rhk/pubchart?oid=643617233&amp;format=interactive">
+        </iframe>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer
+      class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off"
+    >
+      <a href="index.html" class="w3-button w3-light-grey"
+        ><i class="fa fa-arrow-up w3-margin-right"></i>To The Top</a
+      >
+      <p>
+        Powered by
+        <a
+          href="https://www.w3schools.com/w3css/default.asp"
+          title="W3.CSS"
+          target="_blank"
+          class="w3-hover-text-green"
+          >w3.css</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+
+      // Change style of navbar on scroll
+      window.onscroll = function () {
+        myFunction();
+      };
+      function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          navbar.className =
+            "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        } else {
+          navbar.className = navbar.className.replace(
+            " w3-card w3-animate-top w3-white",
+            ""
+          );
+        }
+      }
+
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+    </script>
+  </body>
+</html>
